@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Style the header */
+.header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Style the main content */
+.main {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the login form */
+.form {
+  width: 300px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Style the input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px 0 15px 0;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the links */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+</div>
+
+<div class="main">
+  <div class="form">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="/register">Register here</a>.</p>
+    <p>Forgot your password? <a href="/reset">Reset here</a>.</p>
+  </div>
+</div>
+
+</body>
+</html>
