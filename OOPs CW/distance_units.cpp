@@ -16,7 +16,7 @@ class DM
         void display()
         {
             cout<<"\n The distance is:";
-            cout<<meter<<"mtr and"<<centi<<"Centimetre";
+            cout<<meter<<"mtr and "<<centi<< "Centimetre";
         }
         friend void add(DM&, DB&);
     };
@@ -29,7 +29,7 @@ class DB
     {
         cout<<"\nEnter the distance in (feet):";
         cin>>feet;
-        cout<<"\nEnter the distance in (inch):";
+        cout<<"\n(If any)\nEnter the distance in (inch):";
         cin>>inch;
     }
     void display()
